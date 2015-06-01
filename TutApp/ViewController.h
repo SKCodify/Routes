@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *latLabel;
+@property (weak, nonatomic) IBOutlet UILabel *longLabel;
 
 @end
 
